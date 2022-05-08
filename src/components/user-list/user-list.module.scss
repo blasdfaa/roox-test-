@@ -1,0 +1,28 @@
+@use "../../styles/typography" as *;
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list_item {
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.status_text {
+  @include text-title(400);
+
+  margin: 0;
+  text-align: center;
+}
+
+.stat_message {
+  @include text-primary;
+
+  padding-top: 20px;
+  text-align: right;
+  margin: 0;
+}

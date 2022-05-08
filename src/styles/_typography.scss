@@ -1,0 +1,35 @@
+@mixin text-button {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@mixin text-title($weight: 700) {
+  font-weight: $weight;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+@mixin text-primary {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@mixin text-secondary {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+@mixin text-input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+@mixin text-label {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}

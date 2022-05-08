@@ -1,0 +1,17 @@
+@use "../../styles/vars" as *;
+
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  padding: 20px 12px;
+  border: 1px solid $gray;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.submit_button {
+  margin-left: auto;
+}

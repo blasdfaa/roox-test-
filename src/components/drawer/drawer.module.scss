@@ -1,0 +1,32 @@
+@use "../../styles/vars" as *;
+@use "../../styles/typography" as *;
+
+.root {
+  position: fixed;
+  min-height: 100vh;
+  width: 230px;
+  background: $gray-dark;
+  padding: 15px;
+
+  @media (max-width: 599px) {
+    width: 150px;
+  }
+}
+
+.title {
+  @include text-primary;
+
+  margin: 0 0 15px;
+}
+
+.controls {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}

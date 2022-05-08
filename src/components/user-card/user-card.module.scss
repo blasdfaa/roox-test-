@@ -1,0 +1,51 @@
+@use "../../styles/vars" as *;
+@use "../../styles/typography" as *;
+
+.root {
+  display: flex;
+  border-radius: 8px;
+  min-height: 72px;
+  padding: 10px;
+  background-color: $gray;
+
+  @media (max-width: 599px) {
+    flex-direction: column;
+  }
+}
+
+.info_key {
+  @include text-secondary;
+
+  margin: 0;
+  color: $gray-darker;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.info_value {
+  color: $dark;
+}
+
+.controls {
+  display: flex;
+  margin-left: auto;
+  align-items: flex-end;
+
+  @media (max-width: 599px) {
+    padding-top: 20px;
+    margin-left: initial;
+  }
+}
+
+.link {
+  @include text-primary;
+
+  color: $primary;
+
+  &:hover,
+  &:focus {
+    color: darken($primary, 15%);
+  }
+}

@@ -1,0 +1,28 @@
+@import "./mormalize";
+@import "./vars";
+@import "./typography";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $roboto-font;
+  text-rendering: optimizeLegibility;
+  width: 100%;
+  color: $dark;
+  background-color: $white;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}

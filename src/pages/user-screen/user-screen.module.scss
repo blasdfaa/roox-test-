@@ -1,0 +1,25 @@
+@use "../../styles/typography" as *;
+
+.section {
+  padding-top: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.title {
+  @include text-title;
+
+  margin: 0;
+}
+
+.status_text {
+  @include text-title(400);
+
+  margin: 0;
+  text-align: center;
+}

@@ -1,0 +1,58 @@
+@use "../../../styles/vars" as *;
+@use "../../../styles/typography" as *;
+
+.root {
+  display: flex;
+  flex-direction: column;
+  max-width: 210px;
+  min-height: 34px;
+}
+
+.root.gutter_bottom {
+  &:not(:last-child) {
+    margin-bottom: 14px;
+  }
+}
+
+.label {
+  @include text-label;
+
+  margin-bottom: 4px;
+}
+
+.input {
+  @include text-input;
+
+  font-family: inherit;
+  padding: 5px 10px;
+  border: 1px solid $input-border;
+  border-radius: 5px;
+  height: 30px;
+  width: 100%;
+  background-color: $white;
+
+  &:disabled {
+    user-select: none;
+    pointer-events: none;
+    background-color: $white;
+    color: rgba($dark, 30%);
+  }
+
+  /* error state */
+
+  &:invalid[data-focused="true"] {
+    outline: none;
+    box-shadow: 0 0 2px 2px $error;
+  }
+}
+
+/* Multiline */
+
+.root.multiline {
+  max-width: none;
+}
+
+.multiline .input {
+  resize: none;
+  height: 66px;
+}

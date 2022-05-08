@@ -1,0 +1,20 @@
+@use "../../styles/vars" as *;
+@use "../../styles/typography" as *;
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.message {
+  text-align: center;
+  font-size: 24px;
+}
+
+.link {
+  @include text-primary;
+
+  color: $primary;
+}
